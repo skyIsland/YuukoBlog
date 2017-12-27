@@ -1,18 +1,18 @@
 ﻿{
-  "AvatarUrl": "https://avatars3.githubusercontent.com/u/2216750?v=3&s=460",
+  "AvatarUrl": "https://avatars0.githubusercontent.com/u/19652321?s=460&v=4",
   "AboutUrl": "/about",
-  "Account": "root",
-  "Password": "123456",
-  "Site": "あまみや ゆうこ",
-  "Description": "Amamiya Yuuko's ebullient future",
+  "Account": "admin",
+  "Password": "admin",
+  "Site": "丹麦的面包不单卖",
+  "Description": "这世界上有一千万种等待,<br>最好的一种,叫做来日可期.",
   "Disqus": "yuuko",
-  "DefaultTemplate": "Default",
+  "DefaultTemplate": "Hexo",
   "Database": {
     "Type": "SQLite",
     "ConnectionString": "Data source=yuuko.db"
   },
   "BlogRoll": {
-    "GitHub": "Kagamine",
+    "GitHub": "SkyIsland",
     "Follower": true,
     "Following": false
   }

@@ -33,7 +33,7 @@
                     <div class="post-tags">
                         @if (x.CatalogId != null)
                         {
-                            <div class="post-catalog-item post-catalog-item-@x.Catalog.Url.ToLower()"><a href="/catalog/@x.Catalog.Url.ToLower() %>/">@x.Catalog.Url</a></div>
+                            <div class="post-catalog-item post-catalog-item-@x.Catalog.Url.ToLower()"><a href="/catalog/@x.Catalog.Url.ToLower()">@x.Catalog.Url</a></div>
                         }
                         @foreach (PostTag t in x.Tags)
                         {

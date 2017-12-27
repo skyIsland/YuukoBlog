@@ -1,6 +1,6 @@
 ﻿{
   "Title": "Hexo",
-  "IsDefault": false,
+  "IsDefault": true,
   "Author": "Xuanwo",
   "License": "https://github.com/hexojs/hexo",
   "Version": "1.0.0",

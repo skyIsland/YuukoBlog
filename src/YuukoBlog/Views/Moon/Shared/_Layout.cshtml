@@ -8,7 +8,7 @@
     <script type="text/javascript" src="~/assets/Moon/scripts/Main.js"></script>
     <script type="text/javascript" src="~/assets/Moon/scripts/highlight.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>@ViewBag.Title - @ViewBag.Description</title>
+    <title>@ViewBag.Title - @ViewBag.Description.Replace("<br>","")</title>
 </head>
 <body>
     <div class="bg m">
@@ -125,7 +125,7 @@
     </div>
     <div class="footer m">
         <div class="content">
-            Copyright(C) 2014-2015 <a href="http://www.1234.sh" class="profile">www.1234.sh</a>
+            Copyright(C) @DateTime.Now.Year <a href="http://www.ismatch.cn" class="profile">www.ismatch.cn</a>
             Template: 
             <select id="lstTemplate">
                 @foreach (var t in Template.Collection.Templates)

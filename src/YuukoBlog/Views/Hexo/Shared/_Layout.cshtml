@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@ViewBag.Title - @ViewBag.Description</title>
+    <title>@ViewBag.Title - @ViewBag.Description.Replace("<br>","")</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="~/assets/Hexo/css/style.css" rel="stylesheet" />
     <link href="~/assets/Default/styles/font-awesome.css" rel="stylesheet" />
@@ -25,7 +25,7 @@
                     </hgroup>
 
 
-                    <p class="header-subtitle">@ViewBag.Description</p>
+                    <p class="header-subtitle">@Html.Raw(ViewBag.Description)</p>
 
 
 
@@ -97,10 +97,8 @@
                                 </nav>
                                 <nav class="header-nav">
                                     <div class="social">
-                                        <a class="github" target="_blank" href="https://github.com/kagamine" title="github">github</a>
-                                        <a class="mvp" target="_blank" href="https://mvp.microsoft.com/zh-cn/PublicProfile/5001885" title="mvp">mvp</a>
-                                        <a class="linkedin" target="_blank" href="http://www.linkedin.com/in/%E9%80%B8%E7%AC%99-%E9%83%91-3b9980100" title="LinkedIn">LinkedIn</a>
-                                        <a class="mail" target="_blank" href="mailto:911574351@qq.com" title="Email">Email</a>
+                                        <a class="github" target="_blank" href="https://github.com/skyIsland" title="github">github</a>
+                                        <a class="mail" target="_blank" href="mailto:ismatch@qq.com" title="Email">Email</a>
                                     </div>
                                 </nav>
                             </section>
@@ -170,10 +168,8 @@
                         </nav>
                         <nav class="header-nav">
                             <div class="social">
-                                <a class="github" target="_blank" href="https://github.com/kagamine" title="github">github</a>
-                                <a class="mvp" target="_blank" href="https://mvp.microsoft.com/zh-cn/PublicProfile/5001885" title="mvp">mvp</a>
-                                <a class="linkedin" target="_blank" href="http://www.linkedin.com/in/%E9%80%B8%E7%AC%99-%E9%83%91-3b9980100" title="LinkedIn">LinkedIn</a>
-                                <a class="mail" target="_blank" href="mailto:911574351@qq.com" title="Email">Email</a>
+                                <a class="github" target="_blank" href="https://github.com/skyIsland" title="github">github</a>
+                                <a class="mail" target="_blank" href="mailto:ismatch@qq.com" title="Email">Email</a>
                             </div>
                         </nav>
                     </header>
@@ -188,7 +184,7 @@
                 <div class="outer">
                     <div id="footer-info">
                         <div class="footer-left">
-                            &copy; 2016 <a href="https://github.com/PomeloFoundation">Pomelo Foundation</a>, Template
+                            &copy; @DateTime.Now.Year <a href="https://github.com/PomeloFoundation">Pomelo Foundation</a>, Template
                             <select id="lstTemplate">
                                 @foreach (var t in Template.Collection.Templates)
                                 {
